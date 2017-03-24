@@ -1,0 +1,33 @@
+<ion-view hide-nav-bar="true" class="background">
+	<ion-content>
+		<ion-slide-box on-slide-changed="slideHasChanged($index)">
+			<ion-slide ng-repeat="sliderImage in sliderImages">
+                <div class="row">
+                    <div class="col">
+                    <div ng-if="$index===0" > 
+                        <h4 class="onBoardHeadText">Final year projects</h4>
+                        <span>We offer projects at various academic levels ranging from Graduates to Masters</span>
+                    </div>
+                    <div ng-if="$index===1" > 
+                        <h4 class="onBoardHeadText">Technical Training</h4>
+                        <span>we are providing academic training solutions for students and to institutes </span>
+                    </div>
+                    <div ng-if="$index===2">
+                         <h4 class="onBoardHeadText">Technology</h4>
+                         <span>We supported Embedded, Java, Android, .Net, PLC|SCADA and more..</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="onboardImages" ng-src="{{sliderImage.image}}" alt="" />
+                </div>
+            </ion-slide>
+		</ion-slide-box>
+		<div class="row txtCenter nextButtonPosition">
+            <div class="col">
+                <button ng-if="value<2" class="button button-stable getStartedbtn" ng-click="onBoardClick(value)">Next</button>
+                <button ng-if="value===2" class="button button-stable getStartedbtn" ng-click="onBoardClick()">Get started</button>
+            </div>
+        </div>
+	</ion-content>
+</ion-view>

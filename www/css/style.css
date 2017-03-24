@@ -1,0 +1,49 @@
+/* Empty. Add your own CSS if you like */
+.background {
+    background: linear-gradient(#A6CB3D, #c7dd85);
+    background: #A6CB3D; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(#A6CB3D, #c7dd85); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#A6CB3D, #c7dd85); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#A6CB3D, #c7dd85); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#A6CB3D, #c7dd85);/* Standard syntax (must be last) */
+}
+.txtCenter {
+    text-align: center;
+}
+.nextButtonPosition{
+    position:  absolute;
+    bottom: 5%
+}
+.getStartedbtn {
+    border-radius: 30px;
+    width: 200px;
+    
+}
+.slider-pager {
+    bottom: 10%;
+}
+.slider {
+    height: 90%;
+    overflow: visible;
+}
+.slider-slide {
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    height:100%;
+}
+.onboardImages {
+    width: 80%;
+}
+.box {
+  margin-top:10%;
+}
+.slider-pager-page {
+    color: white;
+    fill: gray;
+}
+.slider-pager-page.active
+{
+    fill: #f90;
+    color: white;
+}
