@@ -56,3 +56,10 @@
 .tabs-striped .tabs {
     background-color: #c7dd85;
 }
+.tabs-striped.tabs-background-transparent .tab-item.tab-item-active, 
+.tabs-striped.tabs-background-transparent .tab-item.active,
+.tabs-striped.tabs-background-transparent .tab-item.activated {
+    border-width: 0 !important;
+    margin-top: 0;
+}
+
