@@ -1,12 +1,11 @@
 angular.module('tripleN')
-.controller('onboardingCtrl',['$scope','$ionicSlideBoxDelegate',function($scope, $ionicSlideBoxDelegate){
+.controller('onboardingCtrl',['$scope','$ionicSlideBoxDelegate', '$state',function($scope, $ionicSlideBoxDelegate, $state){
 	$scope.sliderImages = [];
 	$scope.value = {};
 
 	$scope.$on("$ionicView.beforeEnter", function(event, data){
    // handle event
    $scope.value = 0;
-   console.log("State Params: ", data.stateParams);
 });
 	
 	$scope.sliderImages = [ { "image" : "img/Final-Year-Project.png"}, { "image" : "img/Technical-Training.png"}, 
@@ -26,7 +25,8 @@ angular.module('tripleN')
 			$ionicSlideBoxDelegate.next();
 		}else{
 			console.log("last screen , need to navigate to next screen")
-		}
+			$state.go('home');
+		} 
 	}		
 
 }])

@@ -24,13 +24,41 @@ angular.module('tripleN', ['ionic'])
   });
 })
 
-.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $urlRouterProvider){
-
+.config(['$stateProvider', '$urlRouterProvider', '$ionicConfigProvider',function($stateProvider, $urlRouterProvider, $ionicConfigProvider){
+  $ionicConfigProvider.tabs.position('bottom');
   $stateProvider
   .state('onboarding',{
     url : "/onboarding",
     templateUrl : "modules/onboarding/views/onboarding.html",
     controller : "onboardingCtrl"
+  })
+  .state('home',{
+    url : "/home",
+    templateUrl : "modules/home/views/hometab.html"
+  })
+  .state('home.domainlist',{
+    url : "/domainlist",
+    views:{
+        'home.domainlist':{
+          templateUrl :'modules/project/views/domain_List.html'
+        }
+      }
+  })
+  .state('home.trainiglist',{
+    url : "/trainiglist",
+    views : {
+      'home.trainiglist' : {
+        templateUrl : 'modules/training/views/training_program_list.html'
+      }
+    }
+  })
+  .state('home.contact',{
+    url : "/contact",
+    views : {
+      'home.contact' : {
+        templateUrl : 'modules/contact/views/contact_details.html'
+      }
+    }
   })
   $urlRouterProvider.otherwise("/onboarding");
 }])

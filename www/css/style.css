@@ -19,16 +19,21 @@
     width: 200px;
     
 }
-.slider-pager {
-   /* bottom: 10%;*/
+.slider-pager .slider-pager-page {
+    color: #fff;
+    opacity: 0.6;
+    width: 10px;
+    margin: 0 5px;
+    font-size: 9px;
+    bottom: 45% ! important;
 }
 .slider {
-   height: 150%;
+   height: 85%;
     overflow: visible;
 }
 .slider-slide {
+   /* position: absolute;*/
     padding-top: 50px;
-    color: white;
     text-align: center;
     height:100%;
 }
@@ -39,11 +44,15 @@
   margin-top:10%;
 }
 .slider-pager-page {
-    color: white;
+    
     fill: gray;
 }
 .slider-pager-page.active
 {
     fill: #f90;
     color: white;
+}
+
+.tabs-striped .tabs {
+    background-color: #c7dd85;
 }
