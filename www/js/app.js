@@ -40,7 +40,8 @@ angular.module('tripleN', ['ionic'])
     url : "/domainlist",
     views:{
         'home.domainlist':{
-          templateUrl :'modules/project/views/domain_List.html'
+          templateUrl :'modules/project/views/domain_List.html',
+          controller : 'domain_list_ctrl'
         }
       }
   })
