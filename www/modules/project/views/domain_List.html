@@ -1,6 +1,7 @@
 <ion-view hide-nav-bar="true" class="background">
 	<ion-content>
-		<div ng-repeat="domain in domainList" class="card">
+		<button class="button button-small" ng-click="getMsg()">Click to get data</button>
+		<div ng-repeat="domain in domainListtest" class="card">
   			<a href="#/home/trainiglist" class="item item-avatar">
     			<img src="./img/embedded.png">
     			<h2>{{domain}}</h2>
