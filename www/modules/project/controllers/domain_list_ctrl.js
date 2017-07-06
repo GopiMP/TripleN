@@ -4,11 +4,13 @@ $scope.domainListtest = [];
 //$scope.domainList = ["Embeded", "DSP/DIP", "Java", "Dot Net", "NS2", "Android","VLSI", "PLC/SCADA", "Power Electronics", "Power Systems"];
 domain_factory.getDomainList();
  $scope.getMsg = function(){
-	console.log("Initial :"+$rootScope.domainListData)
+ 	$scope.testdomain = $rootScope.domainListData.data;
+	console.log("Initial :"+$rootScope.domainListData.data)
  	alert('welcome to projects');
  	for(var i = 0; i< $rootScope.domainListData.data.length; i++){
- 		$scope.domainListtest = $rootScope.domainListData.data[i];
- 		console.log("Title : "+$rootScope.domainListData.data[i])
+ 		$scope.domainListtest.push = $scope.testdomain[i].title;
+ 		console.log("Title : "+$scope.testdomain[i].title);
+ 		console.log("Title : "+$scope.domainListtest)
  	}
  }
 
