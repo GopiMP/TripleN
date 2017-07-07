@@ -4,7 +4,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('tripleN', ['ionic', 'tripleN.domain_factory', 'tripleN.constant'])
+angular.module('tripleN', ['ionic', 'tripleN.domain_factory', 'tripleN.project_factory'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -44,6 +44,15 @@ angular.module('tripleN', ['ionic', 'tripleN.domain_factory', 'tripleN.constant'
           controller : 'domain_list_ctrl'
         }
       }
+  })
+  .state('home.projectlist',{
+    url : "/projectlist/:domain_name",
+    views : {
+      'home.domainlist' : {
+        templateUrl : "modules/project/views/project_list.html",
+        controller : "project_list_ctrl"
+      }
+    }
   })
   .state('home.trainiglist',{
     url : "/trainiglist",

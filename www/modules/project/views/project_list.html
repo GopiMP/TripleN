@@ -1,0 +1,9 @@
+<ion-view hide-nav-bar="true" class="background">
+	<ion-content>
+		<div ng-repeat="project in ProjectList" class="card">
+  			<div class="item item-text-wrap" ng-click="mailProject(project.title, project.id)">
+    			<p>{{project.title}}<span class="item-note">{{project.id}}</span></p>
+  			</div>
+		</div>
+	</ion-content>
+</ioni-view>

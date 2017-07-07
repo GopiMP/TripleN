@@ -1,11 +1,11 @@
 <ion-view hide-nav-bar="true" class="background">
 	<ion-content>
-		<div ng-repeat="domain in domainList" class="card">
-  			<a href="#/home/trainiglist" class="item item-avatar">
+		<div ng-repeat="domain in domainList" class="list card">
+  			<div class="item item-avatar" ng-click="project_list(domain.title)">
     			<img ng-src="{{domain.image}}">
     			<h2>{{domain.title}}</h2>
     			<p>{{domain.Description}}</p>
-  			</a>
+  			</div>
 		</div>
 	</ion-content>
 </ion-view>
