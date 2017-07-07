@@ -15,7 +15,7 @@
 	"title" : "Dot Net",
 	"Description" : "Microsoft based projects"
 	},{
-	"image" : ".img/embedded.png",
+	"image" : "./img/embedded.png",
 	"title" : "NS2",
 	"Description" : "NS2 based projects"
 	},{

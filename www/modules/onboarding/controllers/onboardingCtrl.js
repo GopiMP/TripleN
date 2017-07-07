@@ -1,11 +1,10 @@
 angular.module('tripleN')
-.controller('onboardingCtrl',['$scope','$ionicSlideBoxDelegate', '$state',function($scope, $ionicSlideBoxDelegate, $state){
+.controller('onboardingCtrl',['$scope','$ionicSlideBoxDelegate', '$state', function($scope, $ionicSlideBoxDelegate, $state){
 	$scope.sliderImages = [];
 	$scope.value = {};
 
 	$scope.$on("$ionicView.beforeEnter", function(event, data){
-   // handle event
-   $scope.value = 0;
+   	$scope.value = 0;
 });
 	
 	$scope.sliderImages = [ { "image" : "img/Final-Year-Project.png"}, { "image" : "img/Technical-Training.png"}, 
