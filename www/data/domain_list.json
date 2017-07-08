@@ -3,39 +3,39 @@
 	"title" : "Embedded",
 	"Description" : "microprocessor and microcontroller based projects"
 	},{
-	"image" : "./img/embedded.png",
+	"image" : "./img/dsp.jpg",
 	"title" : "DSP/DIP",
 	"Description" : "Digital Signal processing"
 	},{
-	"image" : "./img/embedded.png",
+	"image" : "./img/java.png",
 	"title" : "Java",
 	"Description" : "Basic and advanced"
 	},{
-	"image" : "./img/embedded.png",
+	"image" : "./img/dot1-icon.png",
 	"title" : "Dot Net",
 	"Description" : "Microsoft based projects"
 	},{
-	"image" : "./img/embedded.png",
+	"image" : "./img/ns2.png",
 	"title" : "NS2",
 	"Description" : "NS2 based projects"
 	},{
-	"image" : "./img/embedded.png",
+	"image" : "./img/android.png",
 	"title" : "Android",
 	"Description" : "Mobile applicaiton based controller"
 	},{
-	"image" : "./img/embedded.png",
+	"image" : "./img/vlsi.png",
 	"title" : "VLSI",
 	"Description" : "Very large scale Integration"
 	},{
-	"image" : "./img/embedded.png",
+	"image" : "./img/plc.png",
 	"title" : "PLC/SCADA",
 	"Description" : "SCADA projects"
 	},{
-	"image" : "./img/embedded.png",
+	"image" : "./img/electronics.png",
 	"title" : "Power Electronics",
 	"Description" : "Powe electronics projects"
 	},{
-	"image" : "./img/embedded.png",
+	"image" : "./img/systems.png",
 	"title" : "Power Systems",
 	"Description" : "Power systems based projects"
 	}
