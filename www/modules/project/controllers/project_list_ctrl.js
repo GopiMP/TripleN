@@ -1,5 +1,5 @@
 angular.module('tripleN')
-.controller('project_list_ctrl', ['$scope', '$stateParams', '$rootScope', 'project_factory', function ($scope, $stateParams, $rootScope, project_factory) {
+.controller('project_list_ctrl', ['$scope', '$stateParams', '$rootScope', 'project_factory', '$state', function ($scope, $stateParams, $rootScope, project_factory, $state) {
 		 $scope.domain_name = $stateParams.domain_name;
 		 $scope.ProjectList = [];
 		 project_factory.getProjectList($scope.domain_name);
@@ -16,5 +16,6 @@ angular.module('tripleN')
 		});
 		$scope.mailProject = function(project_title, project_id){
 			console.log("Project : "+project_title+" , ID : "+project_id);
+			$state.go('home.mail');
 		}
 	}])

@@ -54,6 +54,14 @@ angular.module('tripleN', ['ionic', 'tripleN.domain_factory', 'tripleN.project_f
       }
     }
   })
+  .state('home.mail',{
+    url : "/mail",
+    views : {
+      'home.domainlist' : {
+        templateUrl : "modules/project/views/mail.html"
+      }
+    }
+  })
   .state('home.trainiglist',{
     url : "/trainiglist",
     views : {
